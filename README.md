@@ -30,7 +30,7 @@ Page Speed:
 
 
 ## Tech Stack
-React, MongoDB, Node.js, Express.js, Docker, AWS ec2
+React, MongoDB, Node.js, Express.js, Docker, Azure B1S
 
 ## Requirements
 
@@ -51,6 +51,8 @@ npm install : Installs packages and dependencies necessary.
 
 npm run build : Runs build script to compile project.
 
-npm run start : Will start the server and setup the project.
+
+npm run start:Runs the app in the development mode.
+Open [http://localhost:3005](http://localhost:3005) to view it in the browser.
 
 npm run test : Runs testing suite and gives a coverage report.
