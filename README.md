@@ -12,14 +12,14 @@ The game starts with the computer randomly generating a 4 digit code and then th
   - [SNAKE](https://github.com/coffeesnakes/snekGame "Snake")
 
 snap shot of component:
- <p align="center">
- <img src="snapShot.jpg" width="60%"></p>
+ <!-- <p align="center">
+ <img src="snapShot.jpg" width="60%"></p> -->
 
 
 Page Speed:
 
-<p align="center">
-<img src="loadSpeed.jpg" width="60%"></p>
+<!-- <p align="center">
+<img src="loadSpeed.jpg" width="60%"></p> -->
 
 ## Table of Contents
 
