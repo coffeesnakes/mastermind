@@ -5,14 +5,18 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 
 const app = express();
-const port = 3003;
+const port = 3005;
 
 // db
 const url = process.env.DATABASE_URL || "mongodb://localhost/mastermind";
 
 mongoose
   .connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => console.log("connecting to MongoDB .."));
+  .then(() => console.log("successfully connected to MongoDB!"));
+
+app.get('/', (req, res) => {
+  res.send('hello friend')
+})
 
 // parse
 app.use(cors());
@@ -27,4 +31,4 @@ app.use('/api/highScores', function(req, res) {
 	res.sendFile(path.join(__dirname, 'build', 'index.html'));
 })
 
-app.listen(port, () => console.log(`connected on ${port}`));
+app.listen(port, () => console.log(`connected on http://localhost:${port}`));
