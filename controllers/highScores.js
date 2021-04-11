@@ -1,4 +1,4 @@
-var Score = require("../models/score");
+var Score = require("../models/highScores");
 
 export async function create(req, res) {
   try {
