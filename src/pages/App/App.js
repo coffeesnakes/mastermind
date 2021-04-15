@@ -4,9 +4,12 @@ import { Route, Switch } from "react-router-dom";
 import GamePage from "../../pages/GamePage/GamePage";
 import HighScoresPage from "../HighScoresPage/HighScoresPage";
 import scoresService from "../../utils/scoresService";
+import SettingsPage from "../SettingsPage/SettingsPage";
 
 const colors = {
-  Easy: ["#7CCCE5", "#FDE47F", "#E04644", "#B576AD"]
+  Easy: ["#7CCCE5", "#FDE47F", "#E04644", "#B576AD"],
+  Moderate: ["#7CCCE5", "#FDE47F", "#E04644", "#B576AD", "#B7D968"],
+  Difficult: ["#7CCCE5", "#FDE47F", "#E04644", "#B576AD", "#B7D968", "#555E7B"],
 };
 
 class App extends Component {
@@ -174,6 +177,18 @@ class App extends Component {
                 handlePegClick={this.handlePegClick}
                 handleScoreClick={this.handleScoreClick}
                 handleTimerUpdate={this.handleTimerUpdate}
+              />
+            )}
+          />
+          <Route
+            exact
+            path="/settings"
+            render={(props) => (
+              <SettingsPage
+                {...props}
+                colorsLookup={colors}
+                difficulty={this.state.difficulty}
+                handleDifficultyChange={this.handleDifficultyChange}
               />
             )}
           />

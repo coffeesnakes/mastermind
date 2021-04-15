@@ -1,6 +1,6 @@
 import React from "react";
 import GuessPeg from "../GuessPeg/GuessPeg";
-import "./GuessPegs.module.css";
+import "./GuessPegs.css";
 
 const GuessPegs = (props) => (
   <div className="GuessPegs">

@@ -33,6 +33,9 @@ const GamePage = (props) => {
           >
             High Scores
           </Link>
+          <Link className="btn btn-default GamePage-link-margin" to="/settings">
+            Difficulty
+          </Link>
           <NewGameButton handleNewGameClick={props.handleNewGameClick} />
         </div>
       </div>

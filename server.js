@@ -6,7 +6,7 @@ const cors = require("cors");
 const favicon = require('serve-favicon')
 
 const app = express();
-const port = 3005;
+const port = process.env.PORT || 3005;
 
 // db
 const url = process.env.DATABASE_URL || "mongodb://localhost/mastermind";
@@ -28,7 +28,7 @@ app.use(favicon(path.join(__dirname, "build", "favicon.ico")));
 app.use(express.static(path.join(__dirname, "build")));
 
 // routing
-// app.use("/api/scores", require("./routes/api/scores"));
+app.use("/api/scores", require("./routes/api/scores"));
 
 app.get("/*", function (req, res) {
   res.sendFile(path.join(__dirname, "build", "index.html"));
