@@ -7,9 +7,9 @@ import scoresService from "../../utils/scoresService";
 import SettingsPage from "../SettingsPage/SettingsPage";
 
 const colors = {
-  Easy: ["#7CCCE5", "#FDE47F", "#E04644", "#B576AD"],
-  Moderate: ["#7CCCE5", "#FDE47F", "#E04644", "#B576AD", "#B7D968"],
-  Difficult: ["#7CCCE5", "#FDE47F", "#E04644", "#B576AD", "#B7D968", "#555E7B"],
+  Easy: ["#0077B5", "#000000", "#fd5c63", "#49c0b6"],
+  Moderate: ["#0077B5", "#000000", "#fd5c63", "#49c0b6", "#7fbb00"],
+  Difficult: ["#0077B5", "#000000", "#fd5c63", "#49c0b6", "#7fbb00", "#990033"],
 };
 
 class App extends Component {

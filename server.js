@@ -12,9 +12,13 @@ const port = process.env.PORT || 3005;
 const url = process.env.DATABASE_URL || "mongodb://localhost/mastermind";
 
 mongoose
-  .connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => console.log("successfully connected to MongoDB!"));
-
+  .connect(url, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true })
+  .then(() => console.log(`successfully connected to mongodb!`));
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('connect', () => {
+  console.log(`connected to MongoDB ${db.name} at ${db.host}:${db.port}`)
+})
 app.get('/', (req, res) => {
   res.send('hello friend')
 })
