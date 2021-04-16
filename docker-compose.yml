@@ -1,27 +1,21 @@
 version: '3.8'
-
 services:
-	node:
-		image: mastermind:latest
-		ports:
-			- 3005:3005
-			environment:
-				DATABASE_URL: mongo:27017
-
-mongo:
-	image: mongo
-	restart: always
-	ports:
-		- 27017
-		environment:
-			MONGO_INITDB_ROOT_USERNAME: root
-			MONGO_INITDB_ROOT_PASSWORD: cats
-
-mongo-express:
-	image: mongo-express
-	restart: always
-	ports:
-		- 8081:8081
-		environment:
-			ME_CONFIG_MONGODB_ADMINUSERNAME: root
-			ME_CONFIG_MONGODB_ADMINPASSWORD: cats
+ checkout:
+  build:
+   context: .
+  ports:
+   - 3000:3000
+  environment:
+   - CONNECTIONSTRING=mongodb://mongo:27017/mastermind
+  volumes:
+   - ./:/code
+ mongo:
+  image: mongo:4.4.3
+  ports:
+   - 27017:27017
+  volumes:
+   - mongodb:/data/db
+   - mongodb_config:/data/configdb
+volumes:
+  mongodb:
+  mongodb_config:
