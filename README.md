@@ -1,8 +1,11 @@
+[![LinkedIn][linkedin-shield]][linkedin-url]
 # Mastermind: break the hidden code!
 
 [Mastermind is now live!](https://mastermindbuild.azurewebsites.net/)
 
 Mastermind is a code breaking game where one player (or the computer) chooses a code that's hidden from the other playing who wants to crack the code.
+
+
 
 Mastermind allow users to:
 - Develop strategies to most efficiently decipher the code
@@ -11,10 +14,12 @@ Mastermind allow users to:
 - Check out your competition by viewing the High Scores page.
 
 
+
+
 ## Contents
 - [Technologies](#Technologies)
-- [Building](#Development)
-- [Requirements](#Requirements)
+- [Getting Started](#Development)
+- [Prerequisites](#Prerequisites)
 - [API documentation](#api-documentaton)
 
 ## Screenshots
@@ -34,13 +39,15 @@ Mastermind allow users to:
 ![Page_Speed](screenshots/pagespeeds.png)
 
 
+## Development
+<p>&nbsp;</p>
+
 ## Technologies
 React, Docker, MongoDB, Azure B1S VM, Node.js, Express.js, Azure Container Instances
 
-## Development
+<p>&nbsp;</p>
 
-
-## Requirements
+## Prerequisites
 
 
 - Node v12.18.4
@@ -48,8 +55,12 @@ React, Docker, MongoDB, Azure B1S VM, Node.js, Express.js, Azure Container Insta
 
 - MongoDB v4.4.0
 
+<p>&nbsp;</p>
 
-### Installing and running the application
+
+## Installing and running the application
+<p>&nbsp;</p>
+
 
 From project directory:
 Install dependencies.
@@ -62,9 +73,35 @@ Start the server
 npm start
 ```
 
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
 ## API documentation
 
 ![API](screenshots/APIDocumentation.png)
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+
+### System Design
+
+<p>&nbsp;</p>
+
+## Version 1
+
+**Minimum Viable Product:**
+The target, was simple, minimal, and durable. Essentially I wanted something that had all of the bare functionalities necessary to play the game with an integrated API for the hidden code. There was never any intent to design anything more for the initial product. It wasn't meant to be beautiful, but rather intuitive so the user can experience the core game without frustration
+- Integrated API from [Random.org](https://www.random.org/) to generate code
+- Setup numeric value inputs via on-click functionality
+- Provided a feedback system that utilizes position and values of guess and responds with number of exact or close guesses.
+- Tracked and displayed remaining number of attempts on the client.
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
 ## My Other Games
 
@@ -73,6 +110,5 @@ npm start
   - [SNAKE](https://github.com/coffeesnakes/snekGame "Snake")
 
 
-### System Design
-
-## Version 1
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/coffeesnakes/
