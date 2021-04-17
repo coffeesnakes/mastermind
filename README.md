@@ -1,5 +1,6 @@
 # Mastermind: break the hidden code!
 
+**[Mastermind is now live!](https://mastermindbuild.azurewebsites.net/) **
 Mastermind is a code-breaking game. The objective is to guess a secret code consisting of a series of 4 colored pegs (or numbers).
 Each guess results in feedback narrowing down the possibilites of the code. Can you crack the code?
 
