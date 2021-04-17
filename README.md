@@ -3,24 +3,14 @@
 [Mastermind is now live!](https://mastermindbuild.azurewebsites.net/)
 
 
-
-Mastermind is a code-breaking game. The objective is to guess a secret code consisting of a series of 4 colored pegs (or numbers).
-Each guess results in feedback narrowing down the possibilites of the code. Can you crack the code?
+I have created a web app that closely resembles the board game Mastermind. Version one can be found in the Github repository under branch: V1, which utilizes an API to randomly generate a 4 digit code that must be guessed by the user.
+**Version2 is now live hosted on Azure and can be played by clicking the link above! Version 2 is a full-stack application for Mastermind, much more closely resembling the original game of Mastermind whilst hosting a bunch of cool new features.**
 
 Mastermind allow users to:
 - Develop strategies to most efficiently decipher the code
 - Submit scores to the database, comparing time and number of guesses to compete for the top 20!
 - Choose game difficulty
 - Check out your competition by viewing the High Scores page.
-
-
-
-## Table of Contents
-0. [Screenshots](#screenshots)
-1. [Tech Stack](#techstack)
-2. [Requirements](#requirements)
-3. [Development](#development)
-4. [Installing Dependencies](#installingdependencies)
 
 
 ## Screenshots
@@ -32,12 +22,13 @@ Mastermind allow users to:
 
 ### Difficulty Selection
 ![Difficulty](screenshots/difficultyselection.png)
+
 ### Page Speed
 ![Page_Speed](screenshots/pagespeeds.png)
 
 
 ## Tech Stack
-React, MongoDB, Node.js, Express.js, Docker, Azure
+React, Docker, MongoDB, Azure B1S VM, Node.js, Express.js, Azure Container Instances
 
 ## Requirements
 
@@ -50,21 +41,18 @@ React, MongoDB, Node.js, Express.js, Docker, Azure
 
 ## Development
 
-### Installing Dependencies
+### Installing and running the application
 
-From within the root directory:
+From project directory:
+Install dependencies.
+```sh
+npm install
+```
 
-npm install : Installs packages and dependencies necessary.
-
-npm run build : Runs build script to compile project.
-
-
-npm run start: Runs the app in the development mode.
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-npm run test : Runs testing suite and gives a coverage report.
-
-
+Start the server
+```sh
+npm start
+```
 
 ## My Other Games
 

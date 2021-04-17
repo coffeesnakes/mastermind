@@ -7,7 +7,7 @@ const ScoreButton = (props) => (
     disabled={props.disabled}
     onClick={props.handleScoreClick}
   >
-    ✔
+    ∙
   </button>
 );
 
