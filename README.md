@@ -1,8 +1,13 @@
 # Mastermind: break the hidden code!
 
-Mastermind is a code-breaking game. The objective is to guess a secret code consisting of a series of 4 colored pegs (numbers in this case).
-Each guess results in feedback narrowing down the possibilites of the code. Victory is achieved by cracking the code before 10 guesses.
+Mastermind is a code-breaking game. The objective is to guess a secret code consisting of a series of 4 colored pegs (or numbers).
+Each guess results in feedback narrowing down the possibilites of the code. Can you crack the code?
 
+Mastermind allow users to:
+- Develop strategies to most efficiently decipher the code
+- Submit scores to the database, comparing time and number of guesses to compete for the top 20!
+- Choose game difficulty
+- Check out your competition by viewing the High Scores page.
 
 ## My Other Games
 
@@ -19,9 +24,6 @@ Each guess results in feedback narrowing down the possibilites of the code. Vict
 4. [Installing Dependencies](#installingdependencies)
 
 
-snap shot of component:
- <!-- <p align="center">
- <img src="snapShot.jpg" width="60%"></p> -->
 
 
 Page Speed:
