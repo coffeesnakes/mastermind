@@ -27,11 +27,13 @@ Mastermind allow users to:
 ### Game
 ![Game](screenshots/game.png)
 
+### HighScore
+![HighScore](screenshots/highscores.png)
 
+### Difficulty Selection
+![Difficulty](screenshots/difficultyselection.png)
 ### Page Speed
-<p align="center">
-<img src="creenshots/pagespeeds.png" width="60%"></p>
-
+![Page_Speed](screenshots/pagespeeds.png)
 
 
 ## Tech Stack
