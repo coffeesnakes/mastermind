@@ -19,10 +19,6 @@ db.on('error', console.error.bind(console, 'connection error:'));
 db.once('connect', () => {
   console.log(`connected to MongoDB ${db.name} at ${db.host}:${db.port}`)
 })
-app.get('/', (req, res) => {
-  res.send('hello friend')
-})
-
 // parse
 app.use(morgan('dev'));
 app.use(express.json());

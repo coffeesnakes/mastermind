@@ -1,0 +1,8 @@
+{
+	"appService.zipIgnorePattern": [
+		"node_modules{,/**}",
+		".vscode{,/**}"
+	],
+	"appService.defaultWebAppToDeploy": "/subscriptions/5b60ea86-6ed8-4b2e-9e05-0e6886d9e943/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/mastermindbuild",
+	"appService.deploySubpath": "."
+}
