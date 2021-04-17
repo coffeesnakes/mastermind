@@ -2,9 +2,7 @@
 
 [Mastermind is now live!](https://mastermindbuild.azurewebsites.net/)
 
-
-I have created a web app that closely resembles the board game Mastermind. Version one can be found in the Github repository under branch: V1, which utilizes an API to randomly generate a 4 digit code that must be guessed by the user.
-**Version2 is now live hosted on Azure and can be played by clicking the link above! Version 2 is a full-stack application for Mastermind, much more closely resembling the original game of Mastermind whilst hosting a bunch of cool new features.**
+Mastermind is a code breaking game where one player (or the computer) chooses a code that's hidden from the other playing who wants to crack the code.
 
 Mastermind allow users to:
 - Develop strategies to most efficiently decipher the code
@@ -13,22 +11,34 @@ Mastermind allow users to:
 - Check out your competition by viewing the High Scores page.
 
 
+## Contents
+- [Technologies](#Technologies)
+- [Building](#Development)
+- [Requirements](#Requirements)
+- [API documentation](#api-documentaton)
+
 ## Screenshots
 ### Game
 ![Game](screenshots/game.png)
 
+
 ### HighScore
 ![HighScore](screenshots/highscores.png)
 
+
 ### Difficulty Selection
 ![Difficulty](screenshots/difficultyselection.png)
+
 
 ### Page Speed
 ![Page_Speed](screenshots/pagespeeds.png)
 
 
-## Tech Stack
+## Technologies
 React, Docker, MongoDB, Azure B1S VM, Node.js, Express.js, Azure Container Instances
+
+## Development
+
 
 ## Requirements
 
@@ -38,8 +48,6 @@ React, Docker, MongoDB, Azure B1S VM, Node.js, Express.js, Azure Container Insta
 
 - MongoDB v4.4.0
 
-
-## Development
 
 ### Installing and running the application
 
@@ -54,8 +62,17 @@ Start the server
 npm start
 ```
 
+## API documentation
+
+![API](screenshots/APIDocumentation.png)
+
 ## My Other Games
 
   - [TETRIS](https://github.com/coffeesnakes/tetris_JS "Tetris")
   - [TICTACTOE](https://github.com/coffeesnakes/tictactoeJS "Tic-Tac-Toe")
   - [SNAKE](https://github.com/coffeesnakes/snekGame "Snake")
+
+
+### System Design
+
+## Version 1
