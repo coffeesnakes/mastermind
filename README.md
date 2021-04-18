@@ -1,4 +1,12 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
+![JavaScript](https://img.shields.io/badge/JavaScript%20-%23323330.svg?&style=flat-square&logo=javascript&logoColor=%23F7DF1E)
+![React](https://img.shields.io/badge/React%20-%2320232a.svg?&style=flat-square&logo=react&logoColor=%2361DAFB)
+![Node](https://img.shields.io/badge/Node.js%20-%2343853D.svg?&style=flat-square&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express%20-%23404d59.svg?&style=flat-square)
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?&style=flat-square&logo=mongodb&logoColor=white)
+![Docker](https://camo.githubusercontent.com/bbd68a3c0f4ee784672cdf8aeffe920f7870961711eecc0c5936e4dc51cd1c05/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446f636b65722532302d2532333234393645442e7376673f267374796c653d666c61742d737175617265266c6f676f3d646f636b6572266c6f676f436f6c6f723d7768697465)
+![Jest](https://img.shields.io/badge/Jest%20-%23C21325.svg?&style=flat-square&logo=Jest&logoColor=white)
+![Git](https://img.shields.io/badge/Git%20-%23F05033.svg?&style=flat-square&logo=git&logoColor=white)
 # Mastermind: break the hidden code!
 
 [Mastermind is now live!](https://mastermindbuild.azurewebsites.net/)
