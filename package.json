@@ -9,9 +9,12 @@
   "scripts": {
     "start": "concurrently \"react-scripts start\" \"nodemon server\"",
     "build": "react-scripts build",
-    "test": "jest --coverage"
+    "test": "jest --coverage --watch"
   },
   "dependencies": {
+    "@testing-library/jest-dom": "^5.11.10",
+    "@testing-library/react": "^11.2.6",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.1",
     "axios": "^0.20.0",
     "body-parser": "^1.19.0",
     "concurrently": "^6.0.1",
@@ -31,7 +34,9 @@
     "supertest": "^6.1.1"
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.13.13",
     "@shelf/jest-mongodb": "^1.2.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",
     "eslint": "^7.17.0",
@@ -56,6 +61,21 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-react",
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/plugin-transform-react-jsx"
+    ]
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+    }
   },
   "proxy": "http://localhost:3005"
 }
