@@ -52,6 +52,7 @@ React, Docker, MongoDB, Azure B1S VM, Node.js, Express.js, Azure Container Insta
 
 - Node v12.18.4
 
+- npm v7.10.0
 
 - MongoDB v4.4.0
 
@@ -93,7 +94,7 @@ npm start
 
 ## Version 1
 
-**Minimum Viable Product:**
+**The Minimum Viable Product:**
 The target, was simple, minimal, and durable. Essentially I wanted something that had all of the bare functionalities necessary to play the game with an integrated API for the hidden code. There was never any intent to design anything more for the initial product. It wasn't meant to be beautiful, but rather intuitive so the user can experience the core game without frustration
 - Integrated API from [Random.org](https://www.random.org/) to generate code
 - Setup numeric value inputs via on-click functionality
@@ -104,6 +105,25 @@ The target, was simple, minimal, and durable. Essentially I wanted something tha
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
+## Version 2
+
+**Ready for production:**
+When figuring out the scope of this refactor I decided to introduce a workflow that has worked for me in the past. I introduced a [ticketing system](https://trello.com/b/w2M2GfG9/mastermind-project) so I could break the project down into small user stories and then prioritize. By setting up my tickets daily I was able to continuously deliver great work.
+
+<p>&nbsp;</p>
+
+This full-stack version of Mastermind builds upon the prototype but is vastly different with many new features.
+
+- Modularized components
+- Design Patterns for state management
+- Colored Pegs chosen via on-click functionality
+- A more minimalistic feedback system
+- Top 20 high scores get saved to the database
+- A timer now introduces a new mechanic to prompt quick thinking
+- Multiple difficulty levels that introduce new pegs
+- Containerized with Docker and deployed on Azure
+
+![Version2](screenshots/V2Logic.png)
 ## My Other Games
 
   - [TETRIS](https://github.com/coffeesnakes/tetris_JS "Tetris")
