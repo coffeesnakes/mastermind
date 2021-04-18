@@ -21,8 +21,7 @@ Mastermind allow users to:
 - Choose game difficulty
 - Check out your competition by viewing the High Scores page.
 
-
-
+<p>&nbsp;</p>
 
 # Contents
 - [Technologies](#Technologies)
@@ -34,7 +33,8 @@ Mastermind allow users to:
 - [Version 1](#Version-1)
 - [Version 2](#Version-2)
 - [Future Updates](#Future-Updates)
-- [Games I've coded](#My-Other-Games)
+
+<p>&nbsp;</p>
 
 ## Screenshots
 ### Game
@@ -57,7 +57,7 @@ Mastermind allow users to:
 <p>&nbsp;</p>
 
 ## Technologies
-React, Docker, MongoDB, Azure B1S VM, Node.js, Express.js, Azure Container Instances
+React, Docker, MongoDB, Jest, Enzyme, Node.js, Express.js, Azure B1S, ACI, Supertest
 
 <p>&nbsp;</p>
 
