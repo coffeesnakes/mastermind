@@ -107,7 +107,7 @@ Current status:
 
 <p> </p>
 
-![tests](screenshots/testing.png)
+![tests](screenshots/testing.jpeg)
 
 
 <p>&nbsp;</p><p>&nbsp;</p>
@@ -125,7 +125,7 @@ The target, was simple, minimal, and durable. Essentially I wanted something tha
 - Provided a feedback system that utilizes position and values of guess and responds with number of exact or close guesses.
 - Tracked and displayed remaining number of attempts on the client.
 
-
+![version1](screenshots/version1.png)
 ![Version1](screenshots/V1Logic.png)
 
 <p>&nbsp;</p><p>&nbsp;</p>
