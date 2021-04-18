@@ -14,5 +14,5 @@ module.exports = {
       testEnvironment: "node",
       testMatch: ["**/specs/**/*.test.node.js?(x)"],
     },
-  ],
+  ]
 };

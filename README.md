@@ -24,11 +24,17 @@ Mastermind allow users to:
 
 
 
-## Contents
+# Contents
 - [Technologies](#Technologies)
 - [Getting Started](#Development)
 - [Prerequisites](#Prerequisites)
 - [API documentation](#api-documentaton)
+- [Testing](#Testing)
+- [System Design](#System-Design)
+- [Version 1](#Version-1)
+- [Version 2](#Version-2)
+- [Future Updates](#Future-Updates)
+- [Games I've coded](#My-Other-Games)
 
 ## Screenshots
 ### Game
@@ -47,7 +53,7 @@ Mastermind allow users to:
 ![Page_Speed](screenshots/pagespeeds.png)
 
 
-## Development
+# Development
 <p>&nbsp;</p>
 
 ## Technologies
@@ -72,18 +78,17 @@ React, Docker, MongoDB, Azure B1S VM, Node.js, Express.js, Azure Container Insta
 
 
 From project directory:
-Install dependencies.
+Install dependencies
 ```sh
 npm install
 ```
 
-Start the server
+Start server
 ```sh
 npm start
 ```
 
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p>
 
 
 ## API documentation
@@ -91,12 +96,23 @@ npm start
 ![API](screenshots/APIDocumentation.png)
 
 
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p>
+
+# Testing
+```sh
+npm test
+```
+
+Current status:
+
+<p> </p>
+
+![tests](screenshots/testing.png)
 
 
+<p>&nbsp;</p><p>&nbsp;</p>
 
-### System Design
+# System Design
 
 <p>&nbsp;</p>
 
@@ -109,9 +125,10 @@ The target, was simple, minimal, and durable. Essentially I wanted something tha
 - Provided a feedback system that utilizes position and values of guess and responds with number of exact or close guesses.
 - Tracked and displayed remaining number of attempts on the client.
 
+
 ![Version1](screenshots/V1Logic.png)
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+
+<p>&nbsp;</p><p>&nbsp;</p>
 
 ## Version 2
 
@@ -119,7 +136,6 @@ The target, was simple, minimal, and durable. Essentially I wanted something tha
 When figuring out the scope of this refactor I decided to introduce a workflow that has worked for me in the past. I introduced a [ticketing system](https://trello.com/b/w2M2GfG9/mastermind-project) so I could break the project down into small user stories and then prioritize. By setting up my tickets daily I was able to continuously deliver great work.
 
 <p>&nbsp;</p>
-
 This full-stack version of Mastermind builds upon the prototype but is vastly different with many new features.
 
 - Modularized components
@@ -131,8 +147,22 @@ This full-stack version of Mastermind builds upon the prototype but is vastly di
 - Multiple difficulty levels that introduce new pegs
 - Containerized with Docker and deployed on Azure
 
+
 ![Version2](screenshots/V2Logic.png)
-## My Other Games
+
+<p>&nbsp;</p>
+
+# Future Updates
+-  Automated testing suite
+-  Continuous integration with CircleCI
+-  Online mulitplayer using websockets
+-  User login page
+-  User authentication with firebase
+-  End Goal: Refactor to React-Native and launch application on iOS and Android
+
+<p>&nbsp;</p>
+
+# My Other Games
 
   - [TETRIS](https://github.com/coffeesnakes/tetris_JS "Tetris")
   - [TICTACTOE](https://github.com/coffeesnakes/tictactoeJS "Tic-Tac-Toe")
