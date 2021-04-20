@@ -107,7 +107,7 @@ Current status:
 
 <p> </p>
 
-![tests](screenshots/testing.jpeg)
+![tests](screenshots/testing.png)
 
 
 <p>&nbsp;</p><p>&nbsp;</p>
