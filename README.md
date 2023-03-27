@@ -9,7 +9,6 @@
 ![Git](https://img.shields.io/badge/Git%20-%23F05033.svg?&style=flat-square&logo=git&logoColor=white)
 # Mastermind: break the hidden code!
 
-[Mastermind is now live!](https://mastermindbuild.azurewebsites.net/)
 
 Mastermind is a code breaking game where one player (or the computer) chooses a code that's hidden from the other playing who wants to crack the code.
 
