@@ -19,6 +19,7 @@ class HighScoresPage extends Component {
         <td>{score.initials}</td>
         <td>{score.numGuesses}</td>
         <td>{formatTime(score.seconds)}</td>
+        <td> {evaluatedScores}</td>
       </tr>
     ));
 
@@ -32,6 +33,7 @@ class HighScoresPage extends Component {
                 <th width={80}>#</th>
                 <th width={100}>Initials</th>
                 <th width={100}>Guesses</th>
+                <th width={100}>Evaluated Score</th>
                 <th>Seconds</th>
               </tr>
             </thead>

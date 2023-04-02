@@ -22,7 +22,23 @@ class App extends Component {
       code: this.genCode(),
       elapsedTime: 0,
       isTiming: true,
+      evaluation: [sortedEvaluations()],
     };
+  }
+
+  sortEvaluation(evaluations) {
+     let sortedEvaluations = evaluations.sort();
+     return sortedEvaluations;
+  }
+
+  getEvaluation() {
+    // number of guessese to be weighted by 0.8
+    let weightedGuesses = guesses.length * 0.8;
+    // time to be weighted by 0.2
+    let weightedTime = elapsedTime * 0.2;
+
+     let evaluation = weightedGuesses * weightedTime
+    return evaluation;
   }
 
   getNewGuess() {

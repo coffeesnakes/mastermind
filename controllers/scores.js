@@ -1,5 +1,10 @@
 var Score = require("../models/score");
 
+module.exports = {
+  create,
+  highScores,
+};
+
 async function create(req, res) {
   try {
     await Score.create(req.body);
@@ -19,8 +24,3 @@ async function highScores(req, res) {
     res.json({ err });
   }
 }
-
-module.exports = {
-  create,
-  highScores,
-};
