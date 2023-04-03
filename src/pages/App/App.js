@@ -2,14 +2,14 @@ import React, { Component } from "react";
 import "./App.css";
 import { Route, Switch } from "react-router-dom";
 import GamePage from "../../pages/GamePage/GamePage";
+import SettingsPage from "../SettingsPage/SettingsPage";
 import HighScoresPage from "../HighScoresPage/HighScoresPage";
 import scoresService from "../../utils/scoresService";
-import SettingsPage from "../SettingsPage/SettingsPage";
 
 const colors = {
-  Easy: ["#0077B5", "#000000", "#fd5c63", "#49c0b6"],
-  Moderate: ["#0077B5", "#000000", "#fd5c63", "#49c0b6", "#7fbb00"],
-  Difficult: ["#0077B5", "#000000", "#fd5c63", "#49c0b6", "#7fbb00", "#990033"],
+  Easy: ["#7CCCE5", "#FDE47F", "#E04644", "#B576AD"],
+  Moderate: ["#7CCCE5", "#FDE47F", "#E04644", "#B576AD", "#B7D968"],
+  Difficult: ["#7CCCE5", "#FDE47F", "#E04644", "#B576AD", "#B7D968", "#555E7B"],
 };
 
 class App extends Component {
@@ -22,23 +22,7 @@ class App extends Component {
       code: this.genCode(),
       elapsedTime: 0,
       isTiming: true,
-      evaluation: [sortedEvaluations()],
     };
-  }
-
-  sortEvaluation(evaluations) {
-     let sortedEvaluations = evaluations.sort();
-     return sortedEvaluations;
-  }
-
-  getEvaluation() {
-    // number of guessese to be weighted by 0.8
-    let weightedGuesses = guesses.length * 0.8;
-    // time to be weighted by 0.2
-    let weightedTime = elapsedTime * 0.2;
-
-     let evaluation = weightedGuesses * weightedTime
-    return evaluation;
   }
 
   getNewGuess() {
@@ -175,7 +159,9 @@ class App extends Component {
     let winTries = this.getWinTries();
     return (
       <div>
-        <header className="header-footer">mastermind </header>
+        <header className="header-footer">
+           M A S T E R M I N D
+        </header>
         <Switch>
           <Route
             exact

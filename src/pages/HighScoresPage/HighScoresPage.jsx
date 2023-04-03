@@ -19,7 +19,6 @@ class HighScoresPage extends Component {
         <td>{score.initials}</td>
         <td>{score.numGuesses}</td>
         <td>{formatTime(score.seconds)}</td>
-        <td> {evaluatedScores}</td>
       </tr>
     ));
 
